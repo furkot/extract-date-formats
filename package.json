@@ -1,0 +1,38 @@
+{
+  "name": "@furkot/extract-date-formats",
+  "version": "0.0.0",
+  "description": "Extract data formats locale from `moment.js`.",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@furkot.com",
+    "url": "https://pirxpilot.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkot/extract-date-formats.git"
+  },
+  "type": "module",
+  "exports": "./index.js",
+  "bin": {
+    "extract-date-formats": "index.js"
+  },
+  "license": "ISC",
+  "keywords": [
+    "date",
+    "locale",
+    "format"
+  ],
+  "dependencies": {
+    "moment": "~2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.4"
+  },
+  "scripts": {
+    "test": "make check"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ]
+}
