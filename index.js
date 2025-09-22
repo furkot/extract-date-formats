@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 import { globSync, writeFileSync } from 'node:fs';
-import { basename, resolve } from 'node:path';
+import { basename } from 'node:path';
 import moment from 'moment';
 
-const cwd = resolve(import.meta.dirname, 'node_modules/moment/locale');
+const cwd = new URL('./locale', import.meta.resolve('moment')).pathname;
 const locales = globSync('*.js', { cwd }).map(name => basename(name, '.js'));
 
 function stringify(data) {
